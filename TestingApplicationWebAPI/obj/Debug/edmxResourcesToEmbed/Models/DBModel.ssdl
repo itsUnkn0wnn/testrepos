@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="postjobModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="WEBAPI_Tree">
+    <Key>
+      <PropertyRef Name="NodeID" />
+    </Key>
+    <Property Name="NodeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentID" Type="int" />
+    <Property Name="ItemName" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityContainer Name="postjobModelStoreContainer">
+    <EntitySet Name="WEBAPI_Tree" EntityType="Self.WEBAPI_Tree" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="postjobModelStoreContainer" CdmEntityContainer="DBModel">
+    <EntitySetMapping Name="WEBAPI_Tree">
+      <EntityTypeMapping TypeName="postjobModel.WEBAPI_Tree">
+        <MappingFragment StoreEntitySet="WEBAPI_Tree">
+          <ScalarProperty Name="NodeID" ColumnName="NodeID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
